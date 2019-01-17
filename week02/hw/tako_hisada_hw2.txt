@@ -1,0 +1,19 @@
+root@tako01:~# date
+Thu Jan 17 10:23:24 UTC 2019
+
+root@tako01:~# ibmcloud sl vs list
+id         hostname   domain       cpu   memory   public_ip       private_ip      datacenter   action   
+69076761   tako01     W251.cloud   1     1024     169.62.94.142   10.87.129.167   sjc04           
+69078423   test       you.cloud    2     2048     -               10.136.70.238   ams03           
+
+root@tako01:~# ibmcloud sl vs cancel 69078423
+This will cancel the virtual server instance: 69078423 and cannot be undone. Continue?> y
+OK
+Virtual server instance: 69078423 was cancelled.
+
+root@tako01:~# date
+Thu Jan 17 10:28:33 UTC 2019
+
+root@tako01:~# ibmcloud sl vs list
+id         hostname   domain       cpu   memory   public_ip       private_ip      datacenter   action   
+69076761   tako01     W251.cloud   1     1024     169.62.94.142   10.87.129.167   sjc04

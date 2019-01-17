@@ -1,0 +1,4 @@
+Tako Hisada
+W251
+
+Completed Jetson setup successfully.
